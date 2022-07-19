@@ -34,7 +34,7 @@ public void somfiltercheck() throws InterruptedException
 	driver.findElement(By.xpath("//a[normalize-space()='Medicine (4)']")).click();
 	Thread.sleep(2000);
 	String searchtext=driver.findElement(By.xpath("//div[contains(@class,'search-bar__summary')]//span[contains(@class,'mobile-hidden')]")).getText();
-	Assert.assertEquals("4 Results for Faculty Named “Dafna”", searchtext);
+	Assert.assertEquals("44 Results for Faculty Named “Dafna”", searchtext);
 }
 
 }
